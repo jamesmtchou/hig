@@ -57,7 +57,7 @@
   "scripts": {
     "build-playground": "react-scripts build",
     "build-storybook": "build-storybook -s public -o build/storybook",
-    "debug-webpack": "NODE_ENV=development webpack",
+    "debug-webpack": "set NODE_ENV=development&&webpack",
     "deploy-playground": "react-scripts build && surge build",
     "deploy-storybook": "npm run build-storybook && surge build/storybook",
     "generate-docs": "node ./scripts/generate-docs.js",

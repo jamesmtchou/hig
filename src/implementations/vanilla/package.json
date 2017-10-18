@@ -5,7 +5,7 @@
   "main": "lib/hig.js",
   "css": "lib/hig.css",
   "scripts": {
-    "lib": "NODE_ENV=production webpack -p",
+    "lib": "set NODE_ENV=production&&webpack -p",
     "watch": "webpack --watch",
     "deploy": "npm run lib && surge .",
     "generate-index": "node ./dev/generate-index.js",
